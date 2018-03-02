@@ -60,6 +60,7 @@ html, body {
 }
 body {
 	background: #1b1f22;
+	background-attachment: fixed;
 }
 body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-switching *, body.is-switching *:before, body.is-switching *:after {
 	-moz-animation: none !important;
@@ -369,6 +370,7 @@ select option {
 	text-decoration: none;
 	display: block;
 	position: relative;
+
 }
 .select-wrapper:before {
 	-moz-osx-font-smoothing: grayscale;
@@ -924,6 +926,7 @@ input[type="submit"],  input[type="reset"],  input[type="button"],  button {
 	background-image: url("../../images/bg.jpg");
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	z-index: 1;
 }
@@ -960,9 +963,9 @@ body.is-loading #bg:before {
 	-ms-justify-content: space-between;
 	justify-content: space-between;
 	position: relative;
-	min-height: 100vh;
+	min-height: 80vh;
 	width: 100%;
-	padding: 4rem 2rem;
+	padding: 3rem 3rem;
 	z-index: 3;
 }
 #wrapper:before {
@@ -972,7 +975,10 @@ body.is-loading #bg:before {
 
 @media screen and (max-width: 1680px) {
 #wrapper {
-	padding: 3rem 2rem;
+	padding-top: 2rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 2rem;
 }
 }
 
@@ -1069,7 +1075,10 @@ body.is-loading #bg:before {
 	-webkit-transition-delay: 0.25s;
 	-ms-transition-delay: 0.25s;
 	transition-delay: 0.25s;
-	padding: 3rem 2rem;
+	padding-top: 3rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 3rem;
 	max-height: 40rem;
 	overflow: hidden;
 }
@@ -1339,12 +1348,21 @@ body.is-loading #header .content .inner {
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	width: 100%;
 	max-width: 100%;
-	margin-top: 2rem;
+	margin-top: 0rem;
 	text-align: center;
 }
+
+#footer .contactinfo {
+	letter-spacing: 0.2rem;
+	font-size: 0.8rem;
+	opacity: 1;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
 #footer .copyright {
 	letter-spacing: 0.2rem;
-	font-size: 0.6rem;
+	font-size: 0.4rem;
 	opacity: 0.75;
 	margin-bottom: 0;
 	text-transform: uppercase;
