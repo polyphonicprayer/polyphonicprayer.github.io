@@ -19,6 +19,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -146,10 +147,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: inherit;
 	text-decoration: none;
 }
+h2 {
+	font-size: 0.5em;
+	line-height: normal;
+}
+li.altlist {
+	margin-bottom: 0.8em;
+}
 h2.alt {
 	/*font-size: 1rem;*/
 	font-weight: lighter;
-	line-height: 1.5;
+	/*line-height: 1.5;*/
 	text-transform: none;
 	letter-spacing: normal;
 	color: inherit;
@@ -202,10 +210,10 @@ h1 {
 	letter-spacing: 0.4rem;
 }
 h2 {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: normal;
 	line-height: 1.4;
-	letter-spacing: 0.5rem;
+	letter-spacing: normal;
 }
 h3 {
 	font-size: 1rem;
@@ -225,10 +233,7 @@ h1 {
 	font-size: 1.75rem;
 	line-height: 1.4;
 }
-h2 {
-	font-size: 1.25em;
-	line-height: 1.5;
-}
+
 }
 sub {
 	font-size: 0.8rem;
